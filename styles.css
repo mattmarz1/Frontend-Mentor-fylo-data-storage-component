@@ -36,7 +36,7 @@ main {
     border-top-right-radius: 6.25rem;
     border-bottom-left-radius: .625rem;
     border-bottom-right-radius: .625rem;
-    box-shadow: 0px 0px 100px -40px black;
+    box-shadow: 0rem 0rem 6.25rem -2.5rem black;
 }
 
 .icons div {
@@ -76,7 +76,7 @@ main {
     background-color: hsl(228, 56%, 26%);
     border-radius: .625rem;
     position: relative;
-    box-shadow: 0px 0px 100px -40px black;
+    box-shadow: 0rem 0rem 6.25rem -2.5rem black;
 
 }
 
