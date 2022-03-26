@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 
-/* Switch to responsive design mode(in dev tools), and make width 1400px
-   to make it look similar to the original design. */
+/* Switch to responsive design mode(in dev tools), and make 
+   width 1400px, and height 800px to make it 
+   look similar to the original design. */
 
 * {
     margin: 0;
