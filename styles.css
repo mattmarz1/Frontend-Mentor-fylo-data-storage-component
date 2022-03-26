@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+
+/* Switch to responsive mode, and make width 1400px in width 
+   to make it look similar to the original design. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: hsl(229, 57%, 11%);
+    background-image: url(images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 87.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1.875rem;
+}
+
+#box1 {
+    max-width: 23.75rem;
+    width: 100%;
+    background-color: hsl(228, 56%, 26%);
+    padding: 2.5rem;
+    border-top-left-radius: .625rem;
+    border-top-right-radius: 6.25rem;
+    border-bottom-left-radius: .625rem;
+    border-bottom-right-radius: .625rem;
+}
+
+.icons div {
+    background-color: hsl(229, 57%, 11%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.5625rem;
+    padding: 1.6875rem;
+    margin-right: .9375rem;
+    border-radius: .625rem;
+    display: inline-block;
+    
+}
+
+.icons .document {
+    background-image: url(images/icon-document.svg);
+}
+
+.icons .folder {
+    background-image: url(images/icon-folder.svg);
+}
+
+.icons .upload {
+    background-image: url(images/icon-upload.svg);
+}
+
+
+#box2 {
+    max-width: 34.375rem;
+    width: 100%;
+    margin-top: auto;
+    padding: 2.5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: .625rem;
+    position: relative;
+}
+
+#box2 .content {
+    width: 100%;
+}
+
+#box2 .content > p {
+    color: hsl(229, 7%, 55%);
+    margin-bottom: 1.25rem;
+}
+
+#box2 span {
+    color: white;
+    font-weight: 700;
+}
+
+#box2 .storage-bar {
+    width: 100%;
+    height: 1.25rem;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: .625rem;
+    padding: .1875rem;
+    position: relative;
+}
+
+.message-box::before, .storage-bar::before, .storage-bar::after {
+    content: "";
+    display: block;
+}
+
+#box2 .storage-bar::before {
+    height: 100%;
+    width: 75%;
+    border-radius: .625rem;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+
+#box2 .storage-bar::after {
+    height: .6875rem;
+    width: .6875rem;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 25%;
+    top: .3125rem;
+    
+}
+
+#box2 .space {
+    display: flex;
+    margin-top: .625rem;
+    font-size: .875rem;
+}
+
+#box2 .space p {
+    color: white;
+    font-weight: 700;
+}
+
+#box2 .space p:last-child {
+    margin-left: auto;
+    
+}
+
+.message-box {
+    padding: .9375rem 1.5625rem;
+    background-color: white;
+    position: absolute;
+    top: -3.125rem;
+    right: 2.1875rem;
+    border-top-left-radius: .625rem;
+    border-top-right-radius: .625rem;
+    border-bottom-left-radius: .625rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+
+
+.message-box::before {
+    position: absolute;
+    top: 4.75rem;
+    right: 0;
+    border-top: solid 1.5625rem white;
+    border-left: solid 1.5625rem transparent;
+    border-right: solid 0rem transparent;
+    border-bottom: solid .625rem transparent;
+  }
+
+.message-box span {
+    color: black !important;
+    font-size: .875rem;
+    color: hsl(229, 7%, 55%) !important;
+    vertical-align: middle;
+}
+
+.icons {
+    margin-top: 1.875rem;
+}
+
+
+
+@media (min-width: 87.5625rem) {
+    body {
+        background-size: contain;
+    }
+}
+
+@media (max-width: 37.5em) {
+
+    body {
+        background-image: url(images/bg-mobile.png);
+        background-size: cover;
+        margin: 1.25em;
+    }
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #box2 {
+        max-width: 23.125em;
+        padding-bottom: 3.75em;
+    }
+
+    .message-box {
+        height: fit-content;
+        border-radius:  0.625rem;
+        position: absolute;
+        bottom: -2.5rem;
+        top: initial;
+        right: initial;
+    }
+
+    .message-box::before {
+        display: none;
+    }
+}
+
+
+
